@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-filter-button',
+  selector: 'button[appFilterButton]',
   standalone: true,
   imports: [],
   templateUrl: './filter-button.component.html',
-  styleUrl: './filter-button.component.scss'
+  styleUrl: './filter-button.component.scss',
+  host: {
+    class: 'btn-filter',
+  },
 })
-export class FilterButtonComponent {
-
-}
+export class FilterButtonComponent {}
